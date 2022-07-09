@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:layout_margin="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgPerson"
+            android:layout_width="107dp"
+            android:layout_height="144dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/jane" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="138dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imgPerson"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Jane Musimbi" />
+
+        <TextView
+            android:id="@+id/tvHandle"
+            android:layout_width="109dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tvName"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="#@coder  " />
+
+        <TextView
+            android:id="@+id/tvTweet"
+            android:layout_width="277dp"
+            android:layout_height="82dp"
+            android:layout_marginTop="68dp"
+            android:text="&quot;I'm not a great pprogrammer, I'm just a good programmer with great habits."
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.727"
+            app:layout_constraintStart_toEndOf="@+id/imgPerson"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgMessage"
+            android:layout_width="53dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgPerson"
+            app:srcCompat="@drawable/ic_baseline_message_24" />
+
+        <ImageView
+            android:id="@+id/imgLike"
+            android:layout_width="63dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgMessage"
+            app:layout_constraintStart_toStartOf="@+id/imgMessage"
+            app:layout_constraintTop_toTopOf="@+id/imgMessage"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/like" />
+
+        <ImageView
+            android:id="@+id/imgShare"
+            android:layout_width="45dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgLike"
+            app:layout_constraintStart_toEndOf="@+id/imgLike"
+            app:layout_constraintTop_toTopOf="@+id/imgLike"
+            app:layout_constraintVertical_bias="0.857"
+            app:srcCompat="@drawable/ic_baseline_reply_24" />
+
+        <ImageView
+            android:id="@+id/imgRetweet"
+            android:layout_width="51dp"
+            android:layout_height="33dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgShare"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.306"
+            app:layout_constraintStart_toEndOf="@+id/imgShare"
+            app:layout_constraintTop_toTopOf="@+id/imgShare"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_baseline_repeat_one_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
